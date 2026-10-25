@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-bright": "#353944", "on-secondary-fixed-variant": "#005236", "surface-dim": "#0f131d", "on-surface-variant": "#c7c4d7", "tertiary-fixed": "#ffddb8", "background": "#0f131d", "surface-container-highest": "#313540", "error-container": "#93000a", "surface": "#0f131d", "on-error-container": "#ffdad6", "surface-container": "#1c1f2a", "primary-fixed": "#e1e0ff", "surface-variant": "#313540", "on-primary": "#1000a9", "secondary-fixed-dim": "#4edea3", "tertiary-container": "#ca8100", "on-tertiary-fixed": "#2a1700", "on-tertiary-fixed-variant": "#653e00", "on-tertiary": "#472a00", "on-error": "#690005", "tertiary": "#ffb95f", "on-secondary": "#003824", "secondary-fixed": "#6ffbbe", "secondary-container": "#00a572", "inverse-surface": "#dfe2f1", "tertiary-fixed-dim": "#ffb95f", "error": "#ffb4ab", "inverse-primary": "#494bd6", "on-secondary-container": "#00311f", "surface-container-low": "#171b26", "on-surface": "#dfe2f1", "inverse-on-surface": "#2c303b", "primary-container": "#8083ff", "on-primary-fixed-variant": "#2f2ebe", "on-secondary-fixed": "#002113", "secondary": "#4edea3", "on-tertiary-container": "#3e2400", "on-background": "#dfe2f1", "surface-container-high": "#262a35", "outline-variant": "#464554", "primary": "#c0c1ff", "surface-tint": "#c0c1ff", "primary-fixed-dim": "#c0c1ff", "on-primary-fixed": "#07006c", "surface-container-lowest": "#0a0e18", "outline": "#908fa0", "on-primary-container": "#0d0096" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-mobile": "1rem", "gutter-mobile": "0.75rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "margin": "2rem", "gutter": "1.5rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem" }, fontFamily: { "headline-md": ["Space Grotesk"], "body-sm": ["Inter"], "display-hero-mobile": ["Space Grotesk"], "label-numeric-lg": ["JetBrains Mono"], "label-code": ["JetBrains Mono"], "label-numeric-md": ["JetBrains Mono"], "headline-xl-mobile": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "body-lg": ["Inter"], "display-hero": ["Space Grotesk"], "body-md": ["Inter"], "headline-xl": ["Space Grotesk"] }, fontSize: { "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-numeric-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-code": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500" }], "label-numeric-md": ["15px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-xs max-w-md mx-auto"><div class="flex items-center gap-space-xs shrink-0"><img alt="MindArena Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WsX1XZLdMgkz-nqKBPQwLSGCJOm2Jyrld77PTJEia3jk2Mbbk1RS_YFE-qieut-rb2mB6C9KZLfTL6ZFFbk211Oh0Mjfld4sk3ivd_shG-fFScBnjnpZGHrCehBXRr5KqRI810hN69bl_iOV7-G1sPo6jDdKtKg-5ug9lt1vHLu4oYkfp3CHlaa8s1KlEE19Y_UsthXHnKNC6Sbddyla8cDQLDOUtbTE0wyvPQOI2M"/><span class="font-headline-md text-headline-md tracking-tight text-on-surface hidden xs:inline-block sm:inline-block">MindArena</span><span class="font-headline-md text-headline-md tracking-tight text-on-surface xs:hidden sm:hidden">Quant Duel</span></div><div class="flex items-center gap-space-xs"><div class="flex items-center gap-1 bg-surface-container-high px-2 py-1 rounded-full shadow-[inset_0_0_8px_rgba(0,0,0,0.5)]"><span class="font-label-code text-label-code text-secondary tracking-widest">ARENA-7</span><button aria-label="Copy Room Code" class="w-6 h-6 flex items-center justify-center text-on-surface-variant hover:text-secondary active:scale-95 transition-all" type="button"><span class="material-symbols-outlined text-[14px]">content_copy</span></button></div><button aria-label="Toggle Sound" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-on-surface rounded-full active:scale-95 transition-all" type="button"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><div class="relative flex items-center shrink-0"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_m6rCd1Vo7OEaaISXm58Hql49UUp76hHMY4iHsQLAH-CAKXXPICIhZpYmXsrAZKshHXIzrvGnaefA307LHAYw-XLaitFscT2B5htelJbnqotwVnkM9yGoYYFTMnT20-DANQ-2Rmqavee_OqTFsd_yBvUtAwtMHUT10JfZ3ezCy2uceN_tOVquFoPH3L_zze5v66mRqCqpW9eT1W4wAjObvbXgDINa_O1dIp3dyl7x"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-secondary rounded-full ring-2 ring-surface"></span></div><span class="hidden sm:inline-flex ml-1 px-1.5 py-0.5 rounded-full bg-surface-container font-label-code text-label-code text-primary">Lvl 24</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 px-margin-mobile max-w-md mx-auto bg-surface"><div class="flex flex-col w-full gap-space-md">
+<!-- Telemetry Bar & Exam Context -->
+<section class="bg-surface-container rounded-xl p-3 shadow-md flex flex-col gap-2.5">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-code text-label-code uppercase tracking-wider">
+<span class="material-symbols-outlined text-[13px]">calculate</span>
+          Arithmetic: Profit, Loss &amp; Discount
+        </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary font-label-code text-label-code">
+          CAT / SSC CGL Tier-2
+        </span>
+</div>
+<div class="shrink-0 flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-code text-label-code">
+        Q<span class="text-on-surface font-semibold">04</span>/10
+      </div>
+</div>
+<!-- Live Timer, Streak & Risk Matrix -->
+<div class="flex items-center justify-between bg-surface-container-lowest/80 rounded-lg p-2.5 px-3">
+<div class="flex items-center gap-3">
+<!-- Circular countdown SVG -->
+<div class="relative w-11 h-11 flex items-center justify-center shrink-0">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-tertiary transition-all duration-1000 ease-linear" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" id="countdown-ring" stroke="currentColor" stroke-dasharray="64, 100" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-label-numeric-md text-label-numeric-md font-bold text-tertiary leading-none" id="countdown-val">38</span>
+<span class="font-label-code text-[8px] uppercase text-on-surface-variant leading-none mt-0.5">sec</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-code text-[11px] text-on-surface-variant uppercase tracking-wider">Speed Reward Pool</span>
+<div class="flex items-center gap-1.5 font-label-numeric-md text-label-numeric-md">
+<span class="text-secondary font-bold">+100 Max</span>
+<span class="text-outline-variant text-[11px]">•</span>
+<span class="text-error font-medium text-body-sm">-25 Risk</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high font-label-code text-[10px] text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+          ACTIVE DUEL
+        </span>
+<span class="font-label-code text-[11px] text-on-surface-variant mt-1">Pool: 4 Competitors</span>
+</div>
+</div>
+</section>
+<!-- Live Multi-User Lock-in Status Tracker -->
+<section class="bg-surface-container-low rounded-xl p-2.5 px-3 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-[11px] uppercase tracking-wider text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">groups</span>
+        Room Telemetry
+      </span>
+<span class="font-label-code text-[11px] text-secondary">2/4 Locked</span>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<!-- Aarav -->
+<div class="flex flex-col items-center p-1.5 rounded-lg bg-surface-container text-center relative overflow-hidden">
+<div class="w-7 h-7 rounded-full bg-secondary/20 flex items-center justify-center relative mb-1">
+<img class="w-full h-full rounded-full object-cover" data-alt="Close up competitive esports male gamer portrait, sharp studio rim neon green light, focused analytical expression, high resolution dark mode" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsBex66NWcz17UR8hUOdlV2dNEO4NjNRV5MXETMXAVa2yFlSauk-uY6kA0XUVicN85OKfNdKyE03FLz8Y6asLKq8RtpRADNToOLf0IFZ_JXcPbfTQc_RMulyuPcFKkghVy8gfDpCYFXRPm_rKLXiELJTS_km1EoW86GGs7hSCuzN8wPJ-gE272dWevjGDlPOhuh_S8vK2xZBaeIVpU92sZQHcoec6ccrCU7ob_uMKq"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[8px] text-surface font-bold">bolt</span>
+</span>
+</div>
+<span class="font-body-sm text-[11px] font-medium text-on-surface truncate w-full">Aarav</span>
+<span class="font-label-code text-[9px] text-secondary font-semibold">14.2s</span>
+</div>
+<!-- You (Thinking) -->
+<div class="flex flex-col items-center p-1.5 rounded-lg bg-surface-container-high text-center relative overflow-hidden">
+<div class="w-7 h-7 rounded-full bg-primary/20 flex items-center justify-center relative mb-1">
+<img class="w-full h-full rounded-full object-cover" data-alt="Analytical female gamer avatar with electric indigo headphones glowing faintly in dark competitive arena, focused look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB3FGqmnS56M2t0ns2GlVTWo7nudIObgjUd0mH-eUBQ9-VVhscEMxW2M44Y89VFjoW5MxjPWO9volV5GjkSiWRWix2pIoJ_zZAXkntrSKbyH-VMWXkE6Hv_XBtghVazSEDuaCUxAgcB7nOcws1BAjqYwpRNa3zbEQFA97bKm6HKh4pkaPeFUpHy0JrFNlGv-IE5kiwwRMIPCtpoMlWSxhBcIVWITQXs6lxu82X5_Sr"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-primary animate-ping opacity-75"></span>
+<span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-primary flex items-center justify-center">
+<span class="w-1 h-1 rounded-full bg-on-primary"></span>
+</span>
+</div>
+<span class="font-body-sm text-[11px] font-semibold text-primary truncate w-full">You</span>
+<span class="font-label-code text-[9px] text-primary animate-pulse">Solving...</span>
+</div>
+<!-- Priya -->
+<div class="flex flex-col items-center p-1.5 rounded-lg bg-surface-container text-center relative overflow-hidden">
+<div class="w-7 h-7 rounded-full bg-secondary/20 flex items-center justify-center relative mb-1">
+<img class="w-full h-full rounded-full object-cover" data-alt="Confident young competitive math student avatar, dark backdrop with subtle neon emerald ambient glow, portrait style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiJi0uMDriPNuRTru9PkE3ObF-dIPL66f_clQRqRia2ycaY18uHQvEnmyKciG-dzHEkhIqlMk9_zLI8cvTsSOT9FDk8w-HunjjA4J73mrSE5DQZw3GVk4671HZ6y6FuqnUQZ7zsLG3PHPhZkWFS74Pt6q3YeOmzyt_kJmDP4CmDp9gqD5t4HOF3wRtgFsMAC4ga8j6t_cq8oZRBHN6c3Wkvv6Xt77gCjF_A08pMoqH"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[8px] text-surface font-bold">bolt</span>
+</span>
+</div>
+<span class="font-body-sm text-[11px] font-medium text-on-surface truncate w-full">Priya</span>
+<span class="font-label-code text-[9px] text-secondary font-semibold">21.5s</span>
+</div>
+<!-- Kabir -->
+<div class="flex flex-col items-center p-1.5 rounded-lg bg-surface-container text-center relative overflow-hidden opacity-75">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest flex items-center justify-center relative mb-1">
+<img class="w-full h-full rounded-full object-cover" data-alt="Esports avatar for male contestant in high stakes math arena, cool grey and violet rim lighting, thoughtful expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAM8EaxfG5HXqtBAbpETF28wp4Rt9H3iQBqZL5bOXYTLJyF-yvRd7lG8Tj41rmpmOfx0-AZaGRNDfUKDoEdJm40sryYQpyXZSY9WsfzbzH5mRq17r7AcYPmshYBCOyHhQaz56FmblSBdEOx1kTPAw4vnRmtZyKzs3hgNKyoP6vG7nAm-iAVgrfvWKncHchN0se4N0DLWN8NfhQKRmxxT4jj8VEXYMOGHtloDlZWEyY"/>
+</div>
+<span class="font-body-sm text-[11px] font-medium text-on-surface-variant truncate w-full">Kabir</span>
+<span class="font-label-code text-[9px] text-outline">Thinking</span>
+</div>
+</div>
+</section>
+<!-- Main Question Card -->
+<section class="bg-surface-container rounded-xl p-4 shadow-md flex flex-col gap-3 relative">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-primary uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">psychology</span>
+        Problem Statement
+      </span>
+<button aria-label="Scratchpad" class="flex items-center gap-1 font-label-code text-[11px] text-on-surface-variant hover:text-on-surface px-2 py-0.5 rounded-md bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[13px]">stylus_note</span>
+        Scratchpad
+      </button>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+      A shopkeeper marks an article <span class="text-tertiary font-semibold">40% above</span> cost price and allows a discount of <span class="text-tertiary font-semibold">25%</span> on the marked price. If he also uses a false weight that measures <span class="text-secondary font-semibold">900g instead of 1000g</span> during selling, what is his overall net profit percentage?
+    </p>
+<!-- Given Monospace Parameters -->
+<div class="flex items-center gap-1.5 flex-wrap pt-1">
+<span class="font-label-code text-[11px] px-2 py-1 rounded bg-surface-container-lowest text-on-surface-variant">
+        CP: <span class="text-on-surface font-semibold">100</span>
+</span>
+<span class="font-label-code text-[11px] px-2 py-1 rounded bg-surface-container-lowest text-on-surface-variant">
+        MP: <span class="text-tertiary font-semibold">+40%</span>
+</span>
+<span class="font-label-code text-[11px] px-2 py-1 rounded bg-surface-container-lowest text-on-surface-variant">
+        Disc: <span class="text-primary font-semibold">25%</span>
+</span>
+<span class="font-label-code text-[11px] px-2 py-1 rounded bg-surface-container-lowest text-on-surface-variant">
+        Weight: <span class="text-secondary font-semibold">900g / 1kg</span>
+</span>
+</div>
+</section>
+<!-- Interactive 4-Choice Option Grid -->
+<section class="flex flex-col gap-2.5" id="options-container">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-code text-[11px] uppercase tracking-wider text-on-surface-variant">Select Correct Net Margin</span>
+<span class="font-label-code text-[11px] text-outline">Keyboard keys 1-4 active</span>
+</div>
+<!-- Option A -->
+<button class="w-full text-left bg-surface-container hover:bg-surface-container-high rounded-xl p-3 flex items-center justify-between transition-all duration-150 active:scale-[0.99] group" data-option="A" type="button">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-lg bg-surface-container-high group-hover:bg-surface-container-highest flex items-center justify-center font-label-code text-label-code text-on-surface-variant">
+          1
+        </span>
+<div class="flex flex-col">
+<span class="font-label-numeric-md text-label-numeric-md text-on-surface font-semibold">14.28%</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Equivalent fraction: +1/7</span>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-transparent"></span>
+</div>
+</button>
+<!-- Option B (Selected / Active State) -->
+<button class="w-full text-left bg-primary-container/20 shadow-[0_0_20px_-4px_rgba(128,131,255,0.4)] rounded-xl p-3 flex items-center justify-between transition-all duration-150 active:scale-[0.99] group" data-option="B" type="button">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center font-label-code text-label-code font-bold">
+          2
+        </span>
+<div class="flex flex-col">
+<span class="font-label-numeric-md text-label-numeric-md text-primary font-bold">16.67%</span>
+<span class="font-body-sm text-[11px] text-primary-fixed-dim">Equivalent fraction: +1/6</span>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px] text-on-primary font-bold">check</span>
+</div>
+</button>
+<!-- Option C -->
+<button class="w-full text-left bg-surface-container hover:bg-surface-container-high rounded-xl p-3 flex items-center justify-between transition-all duration-150 active:scale-[0.99] group" data-option="C" type="button">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-lg bg-surface-container-high group-hover:bg-surface-container-highest flex items-center justify-center font-label-code text-label-code text-on-surface-variant">
+          3
+        </span>
+<div class="flex flex-col">
+<span class="font-label-numeric-md text-label-numeric-md text-on-surface font-semibold">12.50%</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Equivalent fraction: +1/8</span>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-transparent"></span>
+</div>
+</button>
+<!-- Option D -->
+<button class="w-full text-left bg-surface-container hover:bg-surface-container-high rounded-xl p-3 flex items-center justify-between transition-all duration-150 active:scale-[0.99] group" data-option="D" type="button">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-lg bg-surface-container-high group-hover:bg-surface-container-highest flex items-center justify-center font-label-code text-label-code text-on-surface-variant">
+          4
+        </span>
+<div class="flex flex-col">
+<span class="font-label-numeric-md text-label-numeric-md text-on-surface font-semibold">18.75%</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Equivalent fraction: +3/16</span>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-transparent"></span>
+</div>
+</button>
+</section>
+<!-- Submit & Lock Action Trigger -->
+<section class="flex flex-col gap-2">
+<button class="w-full relative overflow-hidden bg-primary hover:bg-primary-fixed-dim text-on-primary py-3.5 px-4 rounded-xl font-headline-md text-[16px] flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(192,193,255,0.25)] active:scale-[0.98] transition-all" id="lock-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+<span>Submit &amp; Lock Option B (16.67%)</span>
+<!-- Interactive Pulse Indicator -->
+<span class="absolute top-1 right-2 flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-on-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-on-primary"></span>
+</span>
+</button>
+<div class="flex items-center justify-between px-1">
+<span class="font-label-code text-[11px] text-outline">Locking commits +82 points at current timestamp</span>
+<button class="font-label-code text-[11px] text-tertiary hover:underline flex items-center gap-0.5" type="button">
+<span class="material-symbols-outlined text-[13px]">flag</span>
+        Pass (-0 pts)
+      </button>
+</div>
+</section>
+<!-- Fastest Solver & Pro Shortcut Trick Drawer -->
+<section class="bg-surface-container rounded-xl overflow-hidden shadow-md flex flex-col">
+<!-- Fast Solver Live Banner -->
+<div class="bg-surface-container-high p-3 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-tertiary/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[16px]">military_tech</span>
+</div>
+<div>
+<span class="font-label-code text-[10px] text-tertiary uppercase tracking-wider block leading-none">Fastest in Room</span>
+<span class="font-body-md text-[13px] font-semibold text-on-surface">Aarav (14.2s • +96 pts)</span>
+</div>
+</div>
+<button class="flex items-center gap-1 font-label-code text-[12px] text-primary hover:text-primary-fixed bg-surface-container px-2.5 py-1 rounded-lg transition-colors" id="toggle-shortcut" type="button">
+<span>Method</span>
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200" id="drawer-arrow">expand_more</span>
+</button>
+</div>
+<!-- Shortcut Content Box -->
+<div class="p-3.5 flex flex-col gap-3" id="shortcut-drawer">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-[14px] text-tertiary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+          20-Second Mental Math Multiplier Method
+        </span>
+<span class="font-label-code text-[10px] px-2 py-0.5 rounded-full bg-surface-container-highest text-secondary">
+          High Yield Formula
+        </span>
+</div>
+<!-- Core Formula Card -->
+<div class="bg-surface-container-lowest rounded-lg p-2.5 flex flex-col gap-1.5">
+<span class="font-label-code text-[11px] text-on-surface-variant uppercase tracking-wider">Overall Net Multiplier Rule:</span>
+<div class="font-label-code text-[12px] text-primary bg-surface-container-high px-2 py-1.5 rounded text-center overflow-x-auto whitespace-nowrap">
+          Multiplier_Net = (Mult_Markup) × (Mult_Discount) × (Mult_Weight)
+        </div>
+</div>
+<!-- Fractional Breakdown Step-by-Step -->
+<div class="flex flex-col gap-1.5 bg-surface-container-low rounded-lg p-2.5">
+<span class="font-label-code text-[11px] text-on-surface-variant uppercase tracking-wider">Fast Fraction Cancellation:</span>
+<div class="font-label-code text-label-code text-on-surface flex flex-col gap-1">
+<div class="flex items-center gap-1 overflow-x-auto whitespace-nowrap text-secondary">
+<span>= 1.40 × 0.75 × (1000 / 900)</span>
+</div>
+<div class="flex items-center gap-1 overflow-x-auto whitespace-nowrap text-on-surface">
+<span>= (7/5) × (3/4) × (10/9)</span>
+</div>
+<div class="flex items-center gap-1 overflow-x-auto whitespace-nowrap text-tertiary font-bold">
+<span>= 7/6 = 1 + (1/6) ➔ +16.67% Net Profit</span>
+</div>
+</div>
+</div>
+<!-- Bookmark Action -->
+<button class="w-full py-2 px-3 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-code text-label-code flex items-center justify-center gap-1.5 transition-colors active:scale-[0.99]" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+<span>Saved to Your Quantitative Formula Book</span>
+</button>
+</div>
+</section>
+</div>
+<script>
+  // Simple interactive timer tick simulation
+  let timeLeft = 38;
+  const timeEl = document.getElementById('countdown-val');
+  const ringEl = document.getElementById('countdown-ring');
+  
+  if (timeEl && ringEl) {
+    const timerInterval = setInterval(() => {
+      timeLeft--;
+      if (timeLeft < 0) {
+        clearInterval(timerInterval);
+        return;
+      }
+      timeEl.textContent = timeLeft < 10 ? '0' + timeLeft : timeLeft;
+      const progress = Math.max(0, (timeLeft / 60) * 100);
+      ringEl.setAttribute('stroke-dasharray', `${progress}, 100`);
+      
+      if (timeLeft <= 15) {
+        timeEl.classList.remove('text-tertiary');
+        timeEl.classList.add('text-error');
+        ringEl.classList.remove('text-tertiary');
+        ringEl.classList.add('text-error');
+      }
+    }, 1000);
+  }
+
+  // Toggle drawer behavior
+  const drawerBtn = document.getElementById('toggle-shortcut');
+  const drawer = document.getElementById('shortcut-drawer');
+  const arrow = document.getElementById('drawer-arrow');
+  if (drawerBtn && drawer && arrow) {
+    drawerBtn.addEventListener('click', () => {
+      drawer.classList.toggle('hidden');
+      arrow.classList.toggle('rotate-180');
+    });
+  }
+
+  // Interactive option selection
+  const options = document.querySelectorAll('#options-container button');
+  const lockBtn = document.getElementById('lock-btn');
+  options.forEach(opt => {
+    opt.addEventListener('click', () => {
+      options.forEach(o => {
+        o.className = "w-full text-left bg-surface-container hover:bg-surface-container-high rounded-xl p-3 flex items-center justify-between transition-all duration-150 active:scale-[0.99] group";
+        const indicator = o.querySelector('.material-symbols-outlined');
+        if (indicator) {
+          indicator.parentElement.innerHTML = '<span class="w-2 h-2 rounded-full bg-transparent"></span>';
+        }
+      });
+      opt.className = "w-full text-left bg-primary-container/20 shadow-[0_0_20px_-4px_rgba(128,131,255,0.4)] rounded-xl p-3 flex items-center justify-between transition-all duration-150 active:scale-[0.99] group";
+      const badge = opt.querySelector('.w-5.h-5');
+      if (badge) {
+        badge.innerHTML = '<span class="material-symbols-outlined text-[14px] text-on-primary font-bold">check</span>';
+        badge.className = "w-5 h-5 rounded-full bg-primary flex items-center justify-center";
+      }
+      const label = opt.querySelector('.font-label-numeric-md').textContent;
+      const key = opt.getAttribute('data-option');
+      if (lockBtn) {
+        lockBtn.querySelector('span:nth-child(2)').textContent = `Submit & Lock Option ${key} (${label})`;
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.3)]" data-active-classes="text-secondary"><div class="flex justify-around items-center h-16 max-w-md mx-auto px-margin-mobile"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="lobby" href="#"><span class="material-symbols-outlined text-[22px]">meeting_room</span><span class="font-label-code text-label-code uppercase tracking-wider">Lobby</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="ludo-arena" href="#"><span class="material-symbols-outlined text-[22px]">casino</span><span class="font-label-code text-label-code uppercase tracking-wider">Ludo</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="logic-matrix" href="#"><span class="material-symbols-outlined text-[22px]">psychology</span><span class="font-label-code text-label-code uppercase tracking-wider">Logic</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 transition-colors text-secondary" data-path="quant-duel" href="#"><span class="material-symbols-outlined text-[22px]">calculate</span><span class="font-label-code text-label-code uppercase tracking-wider">Quant</span></a></div></nav></body></html>

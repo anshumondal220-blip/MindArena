@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-surface-bright: #353944;
+    --color-surface-dim: #0f131d;
+    --color-surface: #0f131d;
+    --color-surface-container: #1c1f2a;
+    --color-surface-container-high: #262a35;
+    --color-surface-container-highest: #313540;
+    --color-surface-container-low: #171b26;
+    --color-surface-container-lowest: #0a0e18;
+    --color-surface-variant: #313540;
+    --color-on-surface: #dfe2f1;
+    --color-on-surface-variant: #c7c4d7;
+    --color-primary: #c0c1ff;
+    --color-primary-container: #8083ff;
+    --color-on-primary: #1000a9;
+    --color-on-primary-container: #0d0096;
+    --color-primary-fixed: #e1e0ff;
+    --color-primary-fixed-dim: #c0c1ff;
+    --color-secondary: #4edea3;
+    --color-secondary-container: #00a572;
+    --color-secondary-fixed: #6ffbbe;
+    --color-tertiary: #ffb95f;
+    --color-tertiary-container: #ca8100;
+    --color-outline: #908fa0;
+    --color-outline-variant: #464554;
+    --color-error: #ffb4ab;
+    --color-error-container: #93000a;
+  }
+
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0b0e17;
+    color: #dfe2f1;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overscroll-behavior: none;
+  }
+}
+
+.font-headline-md, .font-headline-lg, .font-headline-xl, .font-display-hero {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-body-sm, .font-body-md, .font-body-lg {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-label-code, .font-label-numeric-md, .font-label-numeric-lg {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom Palette Utility Classes */
+.bg-surface { background-color: #0f131d; }
+.bg-surface-bright { background-color: #353944; }
+.bg-surface-dim { background-color: #0f131d; }
+.bg-surface-container { background-color: #1c1f2a; }
+.bg-surface-container-high { background-color: #262a35; }
+.bg-surface-container-highest { background-color: #313540; }
+.bg-surface-container-low { background-color: #171b26; }
+.bg-surface-container-lowest { background-color: #0a0e18; }
+.bg-surface-variant { background-color: #313540; }
+.bg-primary { background-color: #c0c1ff; }
+.bg-primary-container { background-color: #8083ff; }
+.bg-secondary { background-color: #4edea3; }
+.bg-secondary-container { background-color: #00a572; }
+.bg-tertiary { background-color: #ffb95f; }
+.bg-tertiary-container { background-color: #ca8100; }
+.bg-error-container { background-color: #93000a; }
+
+.text-on-surface { color: #dfe2f1; }
+.text-on-surface-variant { color: #c7c4d7; }
+.text-primary { color: #c0c1ff; }
+.text-primary-fixed { color: #e1e0ff; }
+.text-primary-fixed-dim { color: #c0c1ff; }
+.text-on-primary { color: #1000a9; }
+.text-on-primary-container { color: #0d0096; }
+.text-secondary { color: #4edea3; }
+.text-secondary-fixed { color: #6ffbbe; }
+.text-tertiary { color: #ffb95f; }
+.text-tertiary-fixed { color: #ffddb8; }
+.text-outline { color: #908fa0; }
+.text-outline-variant { color: #464554; }
+.text-error { color: #ffb4ab; }
+
+.border-surface-container-high { border-color: #262a35; }
+.border-surface-container-highest { border-color: #313540; }
+.border-surface-bright { border-color: #353944; }
+.border-outline-variant { border-color: #464554; }
+
+/* 3D Pawn tokens */
+.pawn-token {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.6), inset 0 -1px 2px rgba(0, 0, 0, 0.3);
+}
+.pawn-token-glow-red {
+  box-shadow: 0 0 6px #ef4444, inset 0 1px 2px rgba(255, 255, 255, 0.7);
+}
+.pawn-token-glow-green {
+  box-shadow: 0 0 6px #10b981, inset 0 1px 2px rgba(255, 255, 255, 0.7);
+}
+.pawn-token-glow-yellow {
+  box-shadow: 0 0 6px #f59e0b, inset 0 1px 2px rgba(255, 255, 255, 0.7);
+}
+.pawn-token-glow-blue {
+  box-shadow: 0 0 6px #3b82f6, inset 0 1px 2px rgba(255, 255, 255, 0.7);
+}
+.dice-cube {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.7), inset 0 2px 4px rgba(255,255,255,0.8), inset 0 -3px 6px rgba(0,0,0,0.3);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
